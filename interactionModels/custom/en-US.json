@@ -1,0 +1,99 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "test my calendar",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "HelloWorldIntent",
+          "slots": [],
+          "samples": [
+            "hello",
+            "how are you",
+            "say hi world",
+            "say hi",
+            "hi",
+            "say hello world",
+            "say hello"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "ImitateDeveloperIntent",
+          "slots": [
+            {
+              "name": "dev",
+              "type": "devtype"
+            }
+          ],
+          "samples": [
+            "{dev}",
+            "imitate a {dev}",
+            "speak like a {dev}"
+          ]
+        },
+        {
+          "name": "GetCalendarIntent",
+          "slots": [],
+          "samples": [
+            "get all my google calendars",
+            "get all my calendars from google"
+          ]
+        },
+        {
+          "name": "TeacherIntent",
+          "slots": [],
+          "samples": [
+            "say hello"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "programmer"
+              }
+            },
+            {
+              "name": {
+                "value": "developer"
+              }
+            },
+            {
+              "name": {
+                "value": "engineer"
+              }
+            },
+            {
+              "name": {
+                "value": "programmer person"
+              }
+            }
+          ],
+          "name": "devtype"
+        }
+      ]
+    }
+  },
+  "version": "6"
+}
