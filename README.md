@@ -1,33 +1,47 @@
-# Build An Alexa Fact Skill
+# Alexa Custom Skills with AWS Lambda.
 <img src="https://m.media-amazon.com/images/G/01/mobile-apps/dex/alexa/alexa-skills-kit/tutorials/quiz-game/header._TTH_.png" />
-
-This Alexa sample skill is a template for a basic fact skill.
-
-## Skill Architecture
-Each skill consists of two basic parts, a front end and a back end.
-The front end is the voice interface, or VUI.
-The voice interface is configured through the voice interaction model.
-The back end is where the logic of your skill resides.
-
-## Three Options for Skill Setup
-There are a number of different ways for you to setup your skill, depending on your experience and what tools you have available.
-
- * If this is your first skill, choose the [Alexa-Hosted backend instructions](./instructions/setup-vui-alexa-hosted.md) to get started quickly.
- * If you want to manage the backend resources in your own AWS account, you can follow the [AWS-Hosted instructions](./instructions/setup-vui-aws-hosted.md).
- * Developers with the ASK Command Line Interface configured may follow the [ASK CLI instructions](./instructions/cli.md).
 
 ---
 
-## Additional Resources
+## Introduction
 
-### Community
-* [Amazon Developer Forums](https://forums.developer.amazon.com/spaces/165/index.html) - Join the conversation!
-* [Hackster.io](https://www.hackster.io/amazon-alexa) - See what others are building with Alexa.
+This repository provides a guide on developing custom skills for Alexa using AWS Lambda. It aims to help you understand the process of creating intents to communicate effectively with Alexa, offering insights into configurations and setup to seamlessly integrate your code.
 
-### Tutorials & Guides
-* [Voice Design Guide](https://developer.amazon.com/designing-for-voice/) - A great resource for learning conversational and voice user interface design.
-* [Codecademy: Learn Alexa](https://www.codecademy.com/learn/learn-alexa) - Learn how to build an Alexa Skill from within your browser with this beginner friendly tutorial on Codecademy!
+## Getting Started
 
-### Documentation
-* [Official Alexa Skills Kit SDK for Node.js](http://alexa.design/node-sdk-docs) - The Official Node.js SDK Documentation
-* [Official Alexa Skills Kit Documentation](https://developer.amazon.com/docs/ask-overviews/build-skills-with-the-alexa-skills-kit.html) - Official Alexa Skills Kit Documentation
+To get started with Alexa custom skills development and AWS Lambda integration, follow these steps:
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/math-ferreira/alexa-custom-skills-awslambda.git
+   cd alexa-custom-skills-awslambda
+   ```
+
+2. **Install Dependencies:**
+   Ensure that you have the necessary dependencies installed. Refer to the documentation for details.
+
+3. **Configuration:**
+   Modify the configuration files to suit your requirements. This may include authentication credentials, skill settings, and other environment-specific configurations.
+
+4. **Developing Intents:**
+   Explore the `intents` directory to understand how to structure and create intents for your Alexa skill. Follow best practices and customize according to your use case.
+
+## Deployment
+
+Deploying your Alexa custom skill involves setting up AWS Lambda and configuring your Alexa Developer Console. Follow these general steps:
+
+1. **AWS Lambda Setup:**
+   - Create a new Lambda function.
+   - Upload your code or link to your repository.
+   - Configure the necessary environment variables.
+
+2. **Alexa Developer Console:**
+   - Create a new Alexa skill on the [Alexa Developer Console](https://developer.amazon.com/alexa/console/ask).
+   - Configure your skill settings, including the endpoint URL pointing to your AWS Lambda function.
+
+3. **Testing:**
+   Test your skill using the Alexa Simulator or a physical Alexa-enabled device. Ensure that the intents are correctly recognized and handled.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
